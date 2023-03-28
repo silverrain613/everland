@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+/* main content 영역 */
+
+.scroll_area {
+    opacity:0;
+}
+/* 광고이벤트 영역*/
+
+.advertise{
+    position: relative;
+    width: 100%;
+    height: 570px;
+    white-space: nowrap;
+    cursor: default;
+    
+} 
+.advertise .ad {
+   position: relative;
+   
+}
+.advertise .ad > a >img{
+    position: absolute;
+    float: left;
+}
+.advertise .ad_bg{
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 570px;
+}
+    /* 버튼영역 */
+    .control_panel{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100000;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 8px 30px;
+        border-radius: 20px;
+        
+    }
+    .control_panel .on{
+        background: #fff;
+    }
+    .control_panel .control_btn{
+        float: left;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin: 0 8px;
+        cursor: pointer;
+        
+        
+    }
+    .control_panel .stop{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 28px ;
+        height: 28px ;
+        border: none;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+    }
+    .control_panel .stop i {
+        color: #fff;
+        font-size: 1.6em;
+        margin: 5px 5px 5px 9px;
+
+    }
+    
+/* 할인 및 혜택 영역 */
+.discount_benefits{
+    position: relative;
+    box-sizing: border-box;
+    width: 1040px;
+    height: 450px;
+    margin: 100px 0;
+    padding: 50px 80px;
+    text-align: center;
+    cursor: url(../images/fairystick.png), auto;
+    
+    
+}
+
+.discount_benefits_content{
+    position: absolute;
+    top: 30px;
+    border: 5px solid;
+    border-radius: 20px;
+    border-image: linear-gradient(to right, #03384B, #BFF304, #0A8616);
+    border-image-slice: 1;
+
+}
+.discount_benefits .discount_title{
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.discount_benefits h2{
+    font-family: "GothicA1Ex";
+    font-size: 2em;
+    color: #b28b33;
+}
+.discount_benefits h3{
+    color: #0F4E3F;
+}
+.discount_benefits table{
+    padding-right: 20px;
+}
+.discount_benefits img , .bimg>td{
+    box-sizing: border-box;
+    width: 190px ;
+    height: 200px;
+    padding: 40px;
+    
+}
+.discount_benefits img{
+    
+    transition: transform 1s linear;
+}
+.discount_benefits img:hover{
+    transform: scale(1.2);
+}
+.discount_benefits .benefits_img2{
+    padding: 60px;
+}
+.discount_benefits .benefits_img3{
+    width: 250px;
+}
+.discount_benefits .benefits_img4{
+    width: 220px;
+}
+
+
+.discount_benefits table{
+    margin-bottom: 25px;
+}
+.bTitle a{
+    font-family: "GothicA1B";
+    font-size: 1.5em;
+    
+}
+/*  버튼  */
+.discount_benefits button {
+    background: linear-gradient(315deg, #52BC02 0%, #03384B 74%);
+    line-height: 42px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 0.8em;
+    padding-left: 15px ;
+    padding-right: 15px;
+    letter-spacing: 3px;
+    border: none;
+    cursor: pointer;
+  }
+.discount_benefits button:hover{
+    background: linear-gradient(315deg, #185F35, #41A110 74%);
+}
+
+/* 즐길거리 영역 */
+.fun_head{
+    height: 100px;
+   background-image: url(../images/goldLine.png);
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.fun{
+    position: relative;
+    height: 500px;
+    border-bottom: 10px double #b28b33;
+    cursor: url(../images/fairystick.png), auto;
+    
+}
+.fairychoice{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top : 126px;
+    left: -10px;
+    background-image: url(../images/fairy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 110;
+}
+.fairychoice_transform{
+    transform: scaleX(-1);
+    /* transition: 0.5s; */
+}
+.fun .btnArea{
+    position: absolute;
+    box-sizing: border-box;
+    width: 170px;
+    padding: 0px 20px;
+    float: left;
+    text-align: center;
+    z-index: 100;
+}
+.fun h2{
+    width: 140px;
+    font-family: "GothicA1Ex";
+    background: linear-gradient(to right, #2B272B , #FEBF10);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+
+.fun button{
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    font-family: "GothicA1B";
+    font-size: 0.5em;
+    margin: 10px;
+    background: transparent;
+    border: 3px double #b28b33;
+    color: #2B272B;
+    cursor: pointer;
+
+    
+}
+
+.fun .goldcircle {
+    box-sizing: border-box;
+    position: absolute;
+    width: 170px;
+    height: 320px;
+    padding: 0 20px;
+    top: 122px;
+    z-index: 1;
+    
+}
+.fun .goldcircle img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 0 14px;
+    display: none;
+    
+}
+
+.fun .goldcircle img:nth-of-type(1){
+    top: -10px;
+    
+    
+}
+.fun  .goldcircle img:nth-of-type(2){
+    top: 70px;
+    
+    
+}
+.fun  .goldcircle img:nth-of-type(3){
+    top: 150px;
+    
+    
+}
+.fun  .goldcircle img:nth-of-type(4){
+    top: 230px;
+    
+    
+}
+.fun  button:hover{
+    box-shadow: 0 0 10px #b28b33,
+                0 0 30px rgb(255, 255, 0);  
+            
+}
+
+.fun .fun_contentArea{
+    position: absolute;
+    width: 800px;
+    top: 113px;
+    left: 170px;
+    text-align: center;
+}
+.fun .fun_contentArea .contents{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 188px;
+    overflow: hidden;
+}
+.fun .fun_contentArea .contents img{
+    padding: 10px;
+    transition: transform 3s linear;
+}
+.fun .fun_contentArea .contents img:hover{
+    transform: scale(1.2);
+}
+
+.fun .fun_contentArea .contents h3,.fun .fun_contentArea .contents p{
+    text-align: left;
+    padding: 0 10px;
+}
+.fun .fun_contentArea .contents h3{
+    padding: 10px 10px;
+    color: #2B272B;
+    
+}
+
+
+.fun_contentArea:nth-of-type(4){
+    /* display: none; */
+}
+.fun_contentArea:nth-of-type(5){
+    display: none;
+}
+.fun_contentArea:nth-of-type(6){
+    display: none;
+}
+.fun_contentArea:nth-of-type(7){
+    display: none;
+}
+
+
+.fun .more {
+    position: absolute;
+    left: 470px;
+    bottom: 0;
+    width: 110px;
+    height: auto;
+    background: transparent;
+    line-height: 42px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    color: #b28b33;
+    font-size: 1em;
+    padding-left: 15px ;
+    padding-right: 15px;
+    letter-spacing: 5px;
+  }
+.more:hover{
+    background: #b28b33;
+    outline: 2px solid #fff;
+    outline-offset: -5px;
+    color: #fff;
+}
+
+
+/* 정보영역 */
+.information{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 55px 42px 55px 42px;
+    background: url(../images/information_bg.jpg) no-repeat center;
+    margin: 150px 0;
+    cursor: url(../images/fairystick.png), auto;
+    
+    
+}
+.information h1{
+    display: inline-block;
+    font-family: "GothicA1Ex";
+    font-size: 3.2em;
+    padding: 30px 42px;
+    color: #03384B;
+    text-align: center;
+
+}
+.information h1:hover{
+    background: url(../images/glitterbg.jfif);
+    -webkit-background-clip: text;
+    color: transparent;
+   
+  
+
+}
+
+.information .anno, .information .runtime{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    padding: 30px 10px;
+    
+}
+.information h2{
+    font-family: "GothicA1B";
+    font-size: 1.7em;
+    margin-bottom: 15px;
+}
+
+.information .anno{
+    background-color: #fff;
+    
+}
+.information .anno li{
+    line-height: 2;
+}
+.information .runtime{
+    box-sizing: border-box;
+    background-color: #0F4E3F;
+
+}
+.information .runtime h2,.information .runtime p{
+    color: #fff;
+}
+.information .runtime .runtime_content:nth-of-type(2){
+    line-height: 1.2;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.information .runtime .runtime_caution{
+    margin-bottom: 20px;
+}
+.information .runtime .runtime_button_area{
+    text-align: center;
+}
+.information .runtime button{
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 50px;
+    border: none;
+    font-family: "GothicA1B";
+    font-size: 1em;
+    cursor: pointer;
+}
+.information .runtime button:nth-of-type(1){
+    background : none;
+    color: #fff;
+    border: 1.2px solid #fff;
+}
+.information .runtime button:nth-of-type(1):hover{
+    background : #fff;
+    color: #0F4E3F;
+    border: 1.2px solid #fff;
+}
+.information .runtime button:nth-of-type(2){
+    background-color: #F58B00;
+    color: #fff;
+    
+    
+}
+/* 스마트서비스영역 */
+.smartService{
+    position: relative;
+    width: 100vw;
+    height: 550px;
+    margin-left: calc(-50vw + 50%);
+    background-image: linear-gradient(to right,
+                                    #99E3D3 0%, #D2EEB5 20%,#EAF2A9 50%,
+                                    #91e96e 100%);
+    background-size: 400% 400%;
+    animation: backgroundChange 10s ease infinite;
+   
+   
+   
+    
+}
+@keyframes backgroundChange { 
+    0%{background-position:0% 0%}
+    50%{background-position:100% 0%}
+    100%{background-position:0% 0%}
+}
+.smartService_content{
+    position: relative;
+    width: 1040px;
+    height: 405px;
+    margin: 0 auto;
+    padding: 50px 0;
+    
+    
+}
+.smartLine{
+    position: absolute;
+    width: 570px;
+    top: 100px;
+    left: 45px;
+    height: 2px;
+    background-color: #574a2c;
+    
+}
+
+.smartService .smartService_title{
+    float: right;
+    margin-right: 40px;
+    text-align: right;
+    font-family: "GothicA1B";
+    font-size: 1.7em;
+    line-height: 1.8;
+    color: #574a2c;
+    
+
+}
+.smartService .service_content{
+    float: right;
+    margin: 40px 40px 80px 40px; 
+    overflow: hidden;   
+}
+
+.smartService .service_content_img td{
+    overflow: hidden;
+    
+}
+
+.smartService .service_content_img img{
+    transition: transform 2s linear;
+}
+.smartService .service_content_img img:hover{
+    transform: scale(1.2);
+    
+}
+.smartService .service_content_txt {
+    text-align: center;
+    font-family: "GothicA1B";
+    font-size: 1.7em;
+    height: 60px;
+}
+.smartService .service_content_txt td:hover{
+    outline: 5px double #b28b33;
+    outline-offset: -5px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.smartService .service_content_txt a {
+   color: #3f3929;
+}
+
+/* 반응형 */
+@media screen and (max-width : 1040px){
+    .advertise .ad_bg{  
+        margin-left: 0;
+    }
+    .smartService{
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+ 

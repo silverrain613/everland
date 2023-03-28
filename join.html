@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/join.css">
+    <title>에버랜드</title>
+    <script src="https://kit.fontawesome.com/54880b83c5.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <!-- [s]Header 영역 -->
+    <div id="header">
+        <!--[s] 로고 영역 -->
+        <div class="logo" style=" cursor: pointer;" onclick="location.href='mainpage.html';">
+        </div>
+        <!--[e] 로고 영역 -->
+        <!--[s] 유틸리티영역 -->
+        <ul class="utility">
+            <li><a href="https://www.everland.com/mobile/member/login.el?r=https://www.everland.com/web/everland/main.html">로그인</a></li>
+            <li><a href="/join.html">회원가입</a></li>
+            <li><a href="https://www.everland.com/web/everland/customercenter/faq/faq.html">손님상담센터</a></li>
+            <li><a href="https://www.everland.com/web/everland/recruitment/cast/recruitment/news/recruitment_guide01.html">채용문의</a></li>
+        </ul>
+        <!--[e] 유틸리티 영역 -->
+    </div>
+    <!-- [e]Header 영역 -->
+    <!-- [s]main_content 영역 -->
+    <div id="main_content">
+        <!--[s] 회원가입 영역-->
+        <section class="joinArea">
+            <div class="joinMember">
+                <div class="joinMember_title">회원가입</div>
+                <p class="joinMember_message">WELCOME! EVERLAND <br> 환상의 나라로 어서오세요!</p>
+                <form  action="join.jsp" method="post" id="joinForm" name="joinForm">
+                    <div class="joinMember_formGroup">
+                        <div class="joinMember_form_item">
+                            <div class="label">성명</div>
+                            <input type="text" id="name" name="name" placeholder="이름을 입력해주세요">
+                        </div>
+                        <div class="joinMember_form_item">
+                            <div class="sideFunction">
+                                <button type="button" class="button checkID" onclick="checkID()">
+                                    <span>중복체크</span>
+                                </button>
+                            </div>
+                            <div class="label">아이디</div>
+                            <input type="text" id="id" name="id" required placeholder="아이디로 사용하실 이메일을 입력해주세요" autocomplete="off">
+                            <div class="validateMessage idValidateMessage " style="display: none;">
+                                <span class="error">올바른 이메일 형식을 입력해주세요.</span>
+                            </div>
+                        </div>
+                        <div class="joinMember_form_item">
+                            
+                            <div class="label">비밀번호</div>
+                            <input type="password" id="password" name="password" required  placeholder="비밀번호를 입력해주세요">
+                            <div class="validateMessage pwdValidateMessage" style="display: none;">
+                                <span class="error">
+                                    비밀번호는 영문, 숫자 8~13자리 또는 <br>
+                                    영문, 숫자, 특수문자를 혼합한 10~13자리만 가능합니다.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="joinMember_form_item">
+                            <div class="label">연락처</div>
+                            <input type="text" id="tel" name="tel"  title="하이픈(-)은 입력할 수 없습니다." placeholder="입력 예) 01012341234">
+                        </div>
+                        <div class="joinMember_form_item">
+                            <div class="sideFunction exceptGrid">
+                                <input type="checkbox" id="checkSameId" class="check">
+                                <label for="checkSameId">
+                                    아이디와 동일한 이메일
+                                </label>
+                            </div>
+                            <div class="label exceptGrid">추가이메일(선택)</div>
+                            <input type="text" id="email" name="email"  placeholder="소식을 받아보실 이메일 주소를 입력해주세요">
+                        </div>
+                        <div class="joinMember_form_item">
+                            <div class="label exceptGrid"> 거주지역(선택)</div>
+                                <select name="cList" id="cList"  >
+                                   
+                                </select>
+                                <select name="detailCList" id="detailCList">
+                                    
+                                </select>
+                        </div>
+                        <div class="btnComplete">
+                            <button>입력완료</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--[e] 회원가입 영역-->
+        <!--[s] 메인이미지 영역-->
+        <section class="imgArea">
+            
+        </section>
+        <!--[e] 메인이미지 영역-->
+    </div>
+    <!-- [e]main_content 영역 -->
+    <script src="js/join.js"></script>
+</body>
+
+</html>

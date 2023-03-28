@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/recommend.css">
+    <script src="https://kit.fontawesome.com/54880b83c5.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <title>에버랜드</title>
+</head>
+<body>
+    <div id="header">
+        <div class="header_content">
+            <!--[s] 검색창 영역 -->
+            <div class="search_area">
+                <form class="total_searchForm">
+                    <label for="total_search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" class="total_search" id="total_search" placeholder="검색어를 입력해주세요." title="검색어"
+                    name="totalS" maxlength="30">
+                </form>
+            </div>
+            <!--[e] 검색창 영역 -->
+            <!--[s] 뮤직플레이어 영역 -->
+            <div class="music">
+                <p class="music_title">
+                    에버랜드의 음악과 함께 감상해보세요!
+                </p>
+                <audio controls>
+                    <source src="https://wwwcdn.everland.com/web/images/front/everland/swf/assets/mp3/03_Close_your_eyes_and_think_of_the_happiest_moment_Korean.mp3">
+                </audio>
+                <i class="fa-solid fa-forward" title="다음곡 듣기"></i>
+                
+                
+            </div>
+            <!--[e] 뮤직플레이어 영역 -->
+            <!--[s] 로고 영역 -->
+            <div class="logo" style="cursor: pointer;" onclick="location.href='mainpage.html';">
+            </div>
+            <!--[e] 로고 영역 -->
+            <!--[s]사이트 메뉴 영역 -->
+            <ul class="site_menu">
+                <li><a href="https://www.everland.com/web/everland/main.html">에버랜드</a></li>
+                <li><a href="https://www.everland.com/web/caribbean/main.html">캐리비안베이</a></li>
+                <li><a href="https://www.everland.com/web/hb/main.html">홈브리지</a></li>
+            </ul> 
+            <!--[e]사이트 메뉴 영역 -->
+            <!--[s] 유틸리티 영역 -->
+            <ul class="utility">
+                <li><a href="https://www.everland.com/mobile/member/login.el?r=https://www.everland.com/web/everland/main.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="https://www.everland.com/web/everland/customercenter/faq/faq.html">손님상담센터</a></li>
+                <li><a href="https://www.everland.com/web/everland/recruitment/cast/recruitment/news/recruitment_guide01.html">채용문의</a></li>
+            </ul>
+            <!--[e] 유틸리티 영역 -->
+            <!--[s] 메인메뉴 영역 -->
+            <div class="main_menu_area">
+                <ul class="main_menu">
+                    <li class="dropdown"><a href="#" class="drop_btn">이용정보</a>
+                        <ul class="dropdown_content content1">
+                            <li><a href="">뉴스공지</a></li>
+                            <li><a href="">이용방법</a></li>
+                            <li><a href="">운영시간</a></li>
+                            <li><a href="">운휴안내</a></li>
+                            <li><a href="">교통정보</a></li>
+                            <li><a href="">편의시설</a></li>
+                            <li><a href="">가이드맵</a></li>
+                            <li><a href="">모바일앱</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="drop_btn">요금&프로모션</a>
+                        <ul class="dropdown_content content2">
+                            <li><a href="">이용요금</a></li>
+                            <li><a href="">제휴카드</a></li>
+                            <li><a href="">스페셜 프로모션</a></li>
+                            <li><a href="">드림투어</a></li>
+                            <li><a href="">체험 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="drop_btn">즐길거리</a>
+                        <ul class="dropdown_content content3">
+                            <li><a href="recommend.html">추천코스</a></li>
+                            <li><a href="">어트랙션</a></li>
+                            <li><a href="">엔터테인먼트</a></li>
+                            <li><a href="">주토피아(동물원)</a></li>
+                            <li><a href="">플렌토피아(정원)</a></li>
+                            <li><a href="">레스토랑</a></li>
+                            <li><a href="">선물샵 │ MD쇼핑몰</a></li>
+                            <li><a href="">글램핑</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="drop_btn">멤버쉽</a>
+                        <ul class="dropdown_content content4">
+                            <li><a href="">연간 이용권</a></li>
+                            <li><a href="">시즌 이용권</a></li>
+                            <li><a href="">스프링웨이</a></li>
+                            <li><a href="">동물사랑단</a></li>
+                            <li><a href="">식물사랑단</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="drop_btn">+ 더 알아보기</a>
+                        <ul class="dropdown_content content5">
+                            <li><a href="">Editor's Pick</a></li>
+                            <li><a href="">에버랜드 스토리</a></li>
+                            <li><a href="">에버랜드 테마뮤직</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+         </div>
+        <!--[e] 메인메뉴 영역 -->
+    </div>
+    <!-- [e]Header 영역 -->
+    
+    <!-- [s]main_content 영역 -->
+    <div id="main_content">
+        
+       <div class="wrap">
+        <div class="title">
+            <P>추천 코스</P>
+        </div>
+        <div class="content_title">
+            <p><span class="bold">어트랙션즐기기 추천 코스</span> 기상 상황 및 시즌에 따라 어트랙션 및 공연 관람이 변동 될 수 있습니다. 
+                                  에버랜드 App 에서 운휴 및 대기시간 정보를 확인해주세요.</p>
+        </div>
+        <div class="recommend_cotents">
+            <img class="recommend_cotent" src="images/recommend_01.jpg" alt="우천형 추천코스">
+            <img class="recommend_cotent" src="images/recommend_02.jpg" alt="어린이 추천코스">
+            <img class="recommend_cotent" src="images/recommend_03.jpg" alt="강심장 추천코스">
+            <img class="recommend_cotent" src="images/recommend_04.jpg" alt="놀이기구 안타는 추천코스">
+        </div>
+        
+       </div>
+    </div>
+    <!-- [e]main_content 영역 -->
+    <!-- [s]footer 영역 -->
+    <div id="footer">
+        <div class="footer_content">
+            <!-- [s] footer_top  영역 -->
+            <div class="fTop">
+                <ul class="sns">
+                <li><img src="images/youtube.png" alt="유튜브"></li>
+                <li><img src="images/insta.png" alt="인스타그램"></li>
+                <li><img src="images/facebook.png" alt="페이스북"></li>
+                <li><img src="images/blog.png" alt="네이버블로그"></li>
+                <li><img src="images/tstroy.png" alt="티스토리"></li>
+                <li><img src="images/twitter.png" alt="트위터"></li>
+                </ul>
+                <div class="selectList">
+                    <div class="rList">
+                        <select id="select_rList"  title="리조트 관련 사이트 새창열기">
+                            <option value>리조트 내 시설</option>
+                            <option value>교통박물관</option>
+                            <option value>호암미술관</option>
+                            <option value>글렌로스 골프클럽</option>
+                        </select>
+                    </div>
+                    <div class=" fList">
+                        <select id="select_fList"  title=" 계열사 관련 사이트 새창열기">
+                            <option value>FAMILY SITE</option>
+                            <option value>삼성물산 리조트부문</option>
+                            <option value>>골프삼성</option>
+                            <option value>삼성화재안내견학교</option>
+                            <option value>서비스아카데미</option>
+                        </select>  
+                    </div>
+                </div>
+            </div>
+            <!-- [e] footer_top 영역 -->
+            <!-- [s] footer_bottom  영역 -->
+            <div class="fBottom">
+                <ul>
+                    <li><a href="#">에버랜드 리조트 소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이메일 주소 무단수집 거부</a></li>
+                    <li><a href="#"><span class="bold">CAST참여</span></a></li>
+                    <li><a href="#"><span class="bold">사이트맵</span></a></li>
+                </ul>
+                <address>
+                    경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)<br>
+                    <span>대표이사 : 한승환</span><span>사업자 등록번호 : 135-85-04288</span>
+                    <span>통신판매업 신고번호 : 제 2006-용인처인-0216호</span><span>사업자 정보확인▶</span><br>
+                    <span><span class="bold">손님상담센터</span>: 031-320-5000(유료)</span>
+                    <span><strong>개인정보처리방침</strong></span>
+                    <span><strong>방침 개정 안내</strong></span><span>입찰공고</span><br>
+                    copyright @ samsung C&T Corporation. All rights reserved.
+                </address>
+            </div>
+            <!-- [e] footer_bottom  영역 -->
+        </div>
+    </div>
+    <!-- [e]footer 영역 -->
+    <script src="js/common.js"></script>
+    <script src="js/recommend.js"></script> 
+</body>
+
+</html>

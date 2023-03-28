@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에버랜드</title>
+    <script src="https://kit.fontawesome.com/54880b83c5.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mainpage.css">
+    
+</head>
+
+<body>
+<!--[s]전체 컨텐츠 영역  -->
+     <!--[s]건너뛰기 링크-->
+     <a id="skipNav" href="contentsArea">본문 바로가기</a>
+     <!--[e]건너뛰기 링크-->
+    <!-- [s]Header 영역 -->
+    <div id="header">
+        <div class="header_content">
+            <!--[s] 검색창 영역 -->
+            <div class="search_area">
+                <form  class="total_searchForm">
+                    <label for="total_search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" class="total_search" id="total_search" placeholder="검색어를 입력해주세요." title="검색어"
+                    name="totalS" maxlength="30">
+                </form>
+            </div>
+            <!--[e] 검색창 영역 -->
+            <!--[s] 뮤직플레이어 영역 -->
+            <div class="music">
+                <p class="music_title">
+                    에버랜드의 음악과 함께 감상해보세요!
+                </p>
+                <audio controls>
+                    <source src="https://wwwcdn.everland.com/web/images/front/everland/swf/assets/mp3/03_Close_your_eyes_and_think_of_the_happiest_moment_Korean.mp3">
+                </audio>
+                <i class="fa-solid fa-forward" title="다음곡 듣기"></i>
+            </div>
+            <!--[e] 뮤직플레이어 영역 -->
+            <!--[s] 로고 영역 -->
+            <div class="logo" style="cursor: pointer;" onclick="location.href='mainpage.html';"></div>
+            <!--[e] 로고 영역 -->
+            <!--[s]사이트 메뉴 영역 -->
+            <ul class="site_menu">
+                <li><a href="mainpage.html">에버랜드</a></li>
+                <li><a href="https://www.everland.com/web/caribbean/main.html">캐리비안베이</a></li>
+                <li><a href="https://www.everland.com/web/hb/main.html">홈브리지</a></li>
+            </ul> 
+            <!--[e]사이트 메뉴 영역 -->
+            <!--[s] 유틸리티 영역 -->
+            <ul class="utility">
+                <li><a href="#">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">손님상담센터</a></li>
+                <li><a href="#">채용문의</a></li>
+            </ul>
+            <!--[e] 유틸리티 영역 -->
+            <!--[s] 메인메뉴 영역 -->
+            <div class="main_menu_area">
+                <ul class="main_menu">
+                    <li class="dropdown"><a href="#" class="drop_btn">이용정보</a>
+                        <ul class="dropdown_content content1">
+                            <li><a href="#">뉴스공지</a></li>
+                            <li><a href="#">이용방법</a></li>
+                            <li><a href="#">운영시간</a></li>
+                            <li><a href="#">운휴안내</a></li>
+                            <li><a href="#">교통정보</a></li>
+                            <li><a href="#">편의시설</a></li>
+                            <li><a href="#">가이드맵</a></li>
+                            <li><a href="#">모바일앱</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="drop_btn">요금&프로모션</a>
+                        <ul class="dropdown_content content2">
+                            <li><a href="#">이용요금</a></li>
+                            <li><a href="#">제휴카드</a></li>
+                            <li><a href="#">스페셜 프로모션</a></li>
+                            <li><a href="#">드림투어</a></li>
+                            <li><a href="#">체험 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="drop_btn">즐길거리</a>
+                        <ul class="dropdown_content content3">
+                            <li><a href="recommend.html">추천코스</a></li>
+                            <li><a href="#">어트랙션</a></li>
+                            <li><a href="#">엔터테인먼트</a></li>
+                            <li><a href="#">주토피아(동물원)</a></li>
+                            <li><a href="#">플렌토피아(정원)</a></li>
+                            <li><a href="#">레스토랑</a></li>
+                            <li><a href="#">선물샵 │ MD쇼핑몰</a></li>
+                            <li><a href="#">글램핑</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="drop_btn">멤버쉽</a>
+                        <ul class="dropdown_content content4">
+                            <li><a href="#">연간 이용권</a></li>
+                            <li><a href="#">시즌 이용권</a></li>
+                            <li><a href="#">스프링웨이</a></li>
+                            <li><a href="#">동물사랑단</a></li>
+                            <li><a href="#">식물사랑단</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="drop_btn">+ 더 알아보기</a>
+                        <ul class="dropdown_content content5">
+                            <li><a href="#">Editor's Pick</a></li>
+                            <li><a href="#">에버랜드 스토리</a></li>
+                            <li><a href="#">에버랜드 테마뮤직</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        <!--[e] 메인메뉴 영역 -->
+        </div>
+    </div>
+    <!-- [e]Header 영역 -->
+    <!-- [s]main_content 영역 -->
+    <div id="main_content">
+        <!-- [s]광고 및 이벤트 영역 -->
+        <section class="advertise">
+            <div class="ad">
+                <a href="#" title="T익스프레스 오픈 자세히보기">
+                    <img class="ad_bg" src="images/advertise_bg1.jpg" alt="T익스프레스 이미지">
+                    <img class="ad_content" src="images/advertise_txt1.png" alt="T익스프레스 이미지">
+                </a>
+            </div>
+                
+           <!-- 버튼 영역  -->
+           <div class="control_panel">
+                <div class="control_btn"></div>
+                <div class="control_btn"></div>
+                <div class="control_btn"></div>
+                <div class="control_btn"></div>
+                <div class="control_btn"></div>
+                <div class="control_btn"></div>
+                <div class=" stop"><i class="fa-solid fa-pause" title="자동 재생 멈추기"></i></div>
+            </div>
+        </section>
+        <!-- [e]광고 및 이벤트 영역 -->
+        <!-- [s]할인 및 혜택 영역 -->
+        <section class="discount_benefits">
+            <div class="discount_benefits_content scroll_area">
+                <div class="discount_title">
+                    <h2>에버랜드의 선물🎁</h2>
+                    <h3>나에게 맞는 혜택 알아보기</h3>
+                </div>
+                <div class="benefits_img">   
+                    <table>
+                        <tr class="bImg">
+                            <td>
+                                <a href="#" title="제휴카드 스마트예약 자세히보기">
+                                <img class="benefits_img1" src="images/discount1.png" alt="제휴카드 스마트예약" ></a>
+                            </td>
+                            <td>
+                                <a href="#" title="KT멤버십 본인 자세히보기">
+                                <img class="benefits_img2" src="images/discount2.png" alt="KT멤버십 본인" ></a>
+                            </td>
+                            <td>
+                                <a href="#" title="키즈패키지 2인권 자세히보기">
+                                <img class="benefits_img3" src="images/discount3.png" alt="키즈패키지 2인권" ></a>
+                            </td>
+                            <td>
+                                <a href="#" title="홈페이지 신규가입 특별우대 자세히보기">
+                                <img class="benefits_img4" src="images/discount4.png" alt="홈페이지 신규가입 특별우대" ></a>
+                            </td>
+                        </tr>
+                        <tr class="bTitle">
+                            <td><a href="#">제휴카드 스마트예약</a></td>
+                            <td><a href="#">KT멤버십 본인</a></td>
+                            <td><a href="#">키즈패키지 2인권</a></td>
+                            <td><a href="#">홈페이지 신규가입 특별우대</a></td>
+                        </tr>
+                    </table>  
+                    <button class="more">혜택더보기
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                    </button>  
+                </div>
+            </div>
+        </section>
+        <!-- [e]할인 및 혜택 영역 -->
+        <!-- [s]즐길거리 영역 -->
+        <section class="fun">
+            <div class="fun_head"></div>
+            <div class="scroll_area">
+                <div class="fairychoice"></div>
+                <div class="btnArea">
+                    <h2>다양한 어트랙션!</h2>
+                    <button class="btnAtt">어트렉션</button>
+                    <button class="btnEnter">엔터테인먼트</button>
+                    <button class="btnZoo">주토피아</button>
+                    <button class="btnRest">레스토랑</button>
+                </div>
+                <div class="goldcircle">
+                    <img src="images/goldcircle.png" alt="">
+                    <img src="images/goldcircle.png" alt="">
+                    <img src="images/goldcircle.png" alt="">
+                    <img src="images/goldcircle.png" alt="">
+                </div>
+                <div class="fun_contentArea attraction_content">
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=22&zoneCode=CT00205&siteCode=CT00101&themeCode=CT00401">
+                            <img src="images/attFun1.jpg" alt="T익스프레스">
+                            <h3>T익스프레스</h3>
+                            <p>시속 104km의 엄청난 속도,<br>
+                                낙하각 77도의 아찔함!
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=89&zoneCode=CT00206&siteCode=CT00101&themeCode=CT00401">
+                            <img src="images/attFun2.jpg" alt="아마존익스프레스">
+                            <h3>아마존익스프레스</h3>
+                            <p>
+                            탐험가가 되어 아마존 밀림,<br>
+                            580미터 급류속으로 떠나요~
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=55&zoneCode=CT00202&siteCode=CT00101&themeCode=CT00401">
+                            <img src="images/attFun3.jpg" alt="더블락스핀">
+                            <h3>더블락스핀</h3>
+                            <p>강렬한 록큰롤 리듬과 함께 돌고 또 돌고~!연속 4회전의 짜릿함!
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=56&zoneCode=CT00202&siteCode=CT00101&themeCode=CT00401">
+                            <img src="images/attFun4.jpg" alt="롤링 엑스 트레인">
+                            <h3>롤링 엑스트레인</h3>
+                            <p>
+                                꽈배기처럼 꼬인 스크류 회전과 360도의 공중회전이 두 번씩!!<br>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="fun_contentArea entertainment_content">
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=22&zoneCode=CT00205&siteCode=CT00101&themeCode=CT00401">
+                            <img src="images/enterFun1.jpg" alt="런런런포토타임">
+                            <h3>런런런 포토타임</h3>
+                            <p>
+                                귀여운 눈사람, 장난감들과 함께하는
+                                스페셜 포토타임!
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=5074&zoneCode=CT00205&siteCode=CT00101&themeCode=CT00402">
+                            <img src="images/enterFun2.jpg" alt="레니의대모험">
+                            <h3>레니의 대모험</h3>
+                            <p>
+                                이솝빌리지에 무슨일이..?<br>
+                                레니와 라라의 구출 대작전! 
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=3464&zoneCode=CT00205&siteCode=CT00101&themeCode=CT00402">
+                            <img src="images/enterFun3.jpg" alt="런런런! 스노우 프렌즈">
+                            <h3>런런런! 스노우 프렌즈</h3>
+                            <p>온몸을 들썩이게 만드는
+                                레니와 친구들의 신나는 댄스 타임
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=56&zoneCode=CT00202&siteCode=CT00101&themeCode=CT00401">
+                            <img src="images/enterFun4.jpg" alt="문라이트 포토파티">
+                            <h3>문라이트 포토파티</h3>
+                            <p>문라이트 요정들과 함께하는<br>
+                                이색적인 포토파티!
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="fun_contentArea zootopia_content">
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=122&zoneCode=CT00206&siteCode=CT00101&themeCode=CT00404">
+                            <img src="images/zooFun1.jpg" alt="판타스틱 윙스">
+                            <h3>판타스틱 윙스</h3>
+                            <p>
+                                멋진 새들의 비행! <br>
+                                행동, 습성에 맞는 애니멀톡!
+                                
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=3315&zoneCode=CT00206&siteCode=CT00101&themeCode=CT00404">
+                            <img src="images/zooFun2.jpg" alt="알버트 라이브 톡">
+                            <h3>알버트 라이브 톡</h3>
+                            <p>
+                                전문사육사와 원숭이, 유인원 <br> 동물이야기 라이브 톡!<br>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=2698&zoneCode=CT00206&siteCode=CT00101&themeCode=CT00404">
+                            <img src="images/zooFun3.jpg" alt="판다월드">
+                            <h3>판다월드</h3>
+                            <p>국내 최초로 태어난 아기판다 br
+                                '푸바오'를 만나러오세요!
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=2020&zoneCode=CT00206&siteCode=CT00101&themeCode=CT00404">
+                            <img src="images/zooFun4.jpg" alt="로스트 밸리">
+                            <h3>로스트 밸리</h3>
+                            <p>20종 150여 마리 동물 친구들이 살아가는 대자연 로스트 밸리!
+                            </p>
+                        </a>
+                    </div>
+                </div>  
+                <div class="fun_contentArea restaurant_content">
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=2417&zoneCode=CT00205&siteCode=CT00101&themeCode=CT00405">
+                            <img src="images/resFun1.jpg" alt="매직타임 레스토랑">
+                            <h3>매직타임 레스토랑</h3>
+                            <p>
+                                시간을 넘나드는 미각여행! 
+                                한식, 일식, 중식, 샐러드 한자리에!
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=139&zoneCode=CT00205&siteCode=CT00101&themeCode=CT00405" title="알파인 레스토랑 자세히보기">
+                            <img src="images/resFun2.jpg" alt="알파인 레스토랑">
+                            <h3>알파인 레스토랑</h3>
+                            <p>
+                                남녀노소 누구나 좋아하는 한식 베스트 메뉴가 여기에~! <br>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=138&zoneCode=CT00205&siteCode=CT00101&themeCode=CT00405">
+                            <img src="images/resFun3.jpg" alt="알파스 쿠체">
+                            <h3>알파스 쿠체</h3>
+                            <p>
+                                유럽풍 메뉴로 다양한 이 곳에서 유럽 분위기를 한껏 느껴 보세요.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contents">
+                        <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=2020&zoneCode=CT00206&siteCode=CT00101&themeCode=CT00404">
+                            <img src="images/resFun4.jpg" alt="멀린스 스낵">
+                            <h3>멀린스 스낵</h3>
+                            <p>
+                                여기 저기 구경하며 즐길 수 있는 다양한 스낵을 맛보세요!
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <button class="more">더보기
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                </button> 
+            </div>
+        </section>
+        <!-- [e]즐길거리 영역 -->
+        <!-- [s]정보 영역 -->
+        <section class="information scroll_area">
+            <h1 class="information_content">Information</h1>
+            <div class="information_content anno">
+                <h2>공지사항</h2>
+                <ul>
+                    <li><a href="#">23년 시즌 캘린더 안내</a></li>
+                    <li><a href="#">[공지] 코로나 바이러스 감염증-19 관련 안내</a></li>
+                    <li><a href="#">외국인 손님을 위한 영문 APP 이용 안내</a></li>
+                    <li><a href="#">[공지]입장 후 스마트 줄서기 신청 안내</a></li>
+                    <li><a href="#">[공지]포시즌스 가든 휴장 안내</a></li>
+                    <li><a href="#">에버랜드 이용권 삼성페이에 편리하게 추가</a></li>
+                </ul>
+            </div>
+            <div class="information_content runtime">
+                <h2>운영시간</h2>
+                <p class="runtime_content">일~ 목 : 10:00~ 19:00</p>
+                <p class="runtime_content">금, &nbsp;토 &nbsp;: 10:00~ 20:00</p>
+                <p class="runtime_caution">* 현장 상황에 따라 에버랜드 운영 및 공연 
+                    일정이 예고 없이 변경될 수 있습니다.</p>
+                <div class="runtime_button_area">
+                    <button>어트랙션 운휴 안내</button>    
+                    <button>  공연 정보 더보기</button>
+                </div>    
+                
+            </div>
+        </section>
+        <!-- [e]정보 영역 -->
+        <!-- [s]스마트 서비스 영역 -->
+        <section class="smartService">
+            <div class="smartService_content scroll_area">
+                <div class="smartLine"></div>
+                <div class="smartService_title">
+                    <h2>에버랜드를 편리하게  이용</h2>
+                    <h3>스마트 서비스 사용해보기</h3>
+                </div>
+                <table class="service_content">
+                    <tr class="service_content_img">
+                        <td>
+                            <a href="#">
+                                <img src="images/smart1.png" alt="스마트줄서기">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/smart2.jpg" alt="스마트줄서기">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/smart3.jpg" alt="스마트줄서기">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/smart4.jpg" alt="스마트줄서기">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="service_content_txt">
+                        <td><a href="#">스마트 줄서기</a></td>
+                        <td><a href="#">모바일 오더</a></td>
+                        <td><a href="#">모바일 기프트카드</a></td>
+                        <td><a href="#">유모차, 웨건 예약</a></td>
+                    </tr>
+                </table>
+             </div>
+        </section>
+        <!-- [e]스마트 서비스 영역 -->
+    </div>
+    <!-- [e]main_content 영역 -->
+    <!-- [s]footer 영역 -->
+    <div id="footer">
+        <div class="footer_content">
+        <!-- [s] footer_top  영역 -->
+        <div class="fTop">
+            <ul class="sns">
+               <li><a href="https://www.youtube.com/user/withEverland"><img src="images/youtube.png" alt="유튜브"></a></li>
+               <li><a href="https://www.instagram.com/witheverland/"><img src="images/insta.png" alt="인스타그램"></a></li>
+               <li><a href="https://www.facebook.com/witheverland"><img src="images/facebook.png" alt="페이스북"></a></li>
+               <li><a href="https://blog.naver.com/witheverland"><img src="images/blog.png" alt="네이버블로그"></a></li>
+               <li><a href="https://www.witheverland.com/"><img src="images/tstroy.png" alt="티스토리"></a></li>
+               <li><a href="https://twitter.com/witheverland"><img src="images/twitter.png" alt="트위터"></a></li>
+            </ul>
+            <div class="selectList">
+                <div class="rList">
+                    <select id="select_rList"  title="리조트 관련 사이트 새창열기">
+                        <option value>리조트 내 시설</option>
+                        <option value>교통박물관</option>
+                        <option value>호암미술관</option>
+                        <option value>글렌로스 골프클럽</option>
+                    </select>
+                </div>
+                <div class=" fList">
+                    <select id="select_fList"  title=" 계열사 관련 사이트 새창열기">
+                        <option value>FAMILY SITE</option>
+                        <option value>삼성물산 리조트부문</option>
+                        <option value>골프삼성</option>
+                        <option value>삼성화재안내견학교</option>
+                        <option value>서비스아카데미</option>
+                    </select>  
+                </div>
+            </div>
+        </div>
+        <!-- [e] footer_top 영역 -->
+        <!-- [s] footer_bottom  영역 -->
+        <div class="fBottom">
+            <ul>
+                <li><a href="#">에버랜드 리조트 소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이메일 주소 무단수집 거부</a></li>
+                <li><a href="#"><span class="bold">CAST참여</span></a></li>
+                <li><a href="#"><span class="bold">사이트맵</span></a></li>
+            </ul>
+            <address>
+                 경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)<br>
+                 <span>대표이사 : 한승환</span><span>사업자 등록번호 : 135-85-04288</span>
+                 <span>통신판매업 신고번호 : 제 2006-용인처인-0216호</span><span>사업자 정보확인▶</span><br>
+                 <span><span class="bold">손님상담센터</span>: 031-320-5000(유료)</span>
+                 <span><strong>개인정보처리방침</strong></span>
+                 <span><strong>방침 개정 안내</strong></span><span>입찰공고</span><br>
+                 copyright @ samsung C&T Corporation. All rights reserved.
+            </address>
+        </div>
+        <!-- [e] footer_bottom  영역 -->
+    </div>
+    <!-- [e]footer 영역 -->
+</div>
+<!--[e]전체 컨텐츠 영역  -->
+<script src="js/common.js"></script>
+<script src="js/mainpage.js"></script>
+</body>
+
+</html>
