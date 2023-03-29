@@ -30,7 +30,7 @@ a:link{
     text-decoration: none;
  }
  a:hover, a:focus{
-    color: #b28b33;
+    color: #ffbf00;
     text-decoration: none;
  }
  body{
@@ -65,11 +65,11 @@ a:link{
     height: 180px;
     position: relative;
     background-image: linear-gradient(to right,
-                                    #99E3D3 0%, #D2EEB5 20%,#EAF2A9 30%,
-                                    #078329 100%);
+                                    #99E3D3 0%, #08bb0e 20%,#4abb48 30%,
+                                    #096821 100%);
     background-size: 400% 400%;
-    box-shadow:inset 0 -4px 0 0 #b28b33;
-    animation: backgroundChange 10s ease infinite;
+    box-shadow:inset 0 -4px 0 0 #ffbf00;
+    animation: backgroundChange 20s ease infinite;
     
  }
 
@@ -89,7 +89,7 @@ a:link{
  /* 검색창 영역 */
 .search_area{
     position: absolute;
-    right: -80px;
+    right: 54px;
     height: 20px;
     padding-top: 27px;
     
@@ -99,7 +99,7 @@ a:link{
     left: 10px;
     top: 32px;
     font-size: 1.2em;
-    color: #b28b33;
+    color: #ffbf00;
      }
  .total_searchForm .total_search{
     height: 20px;
@@ -107,7 +107,7 @@ a:link{
     color: #fff;
     background-color: transparent;
     border-radius: 50px;
-    border-color: #b28b33;
+    border-color: #ffd700;
     padding: 0 15px 0 40px;
 }
 .total_searchForm .total_search::placeholder{
@@ -122,46 +122,54 @@ a:link{
  /* 뮤직플레이어 영역 */
 .music{
     position: absolute;
-    top: 30px;
-    right: 160px;
+    top: 25px;
+    right: 330px;
     display: inline-block;
     box-sizing: border-box;
-    width: 600px;
+    width: 450px;
     height: 20px;
-    text-align: right;
+    text-align: center;
     line-height: 20px;
 }   
 .music audio{
-   color: #08676A;
-   margin: 0 5px;
-   height: 15px;
-   width: 45%;
+    position: absolute;
+    margin: 0 5px;
+    height: 15px;
+    width: 60%;
+    top: 50px;
+    right: 93px;
+   
   
    
    
 }
 .music .music_title{
     display: inline-block;
-    width: 235px;
+    width: 330px;
     font-weight: bold;
     font-size: 1em;
     color: #fff;
+    margin: 5px 0;
     
    
 }
 .music .music_title:hover{
-    color: #b28b33;
+    color: #ffd700;
 }
 
 
 .music i.fa-forward{
+    position: absolute;
+    top: 50px;
+    right: 74px;
    color: #fff;
     font-size: 1.4em;
     cursor: pointer;
+
     
 }
 .music i.fa-forward:hover{
-    color: #b28b33;
+    color: #ffd700;
      
  }
 
@@ -194,13 +202,13 @@ a:link{
     margin: 5px;
     color: #fff;
 }.site_menu a:hover{
-    color: #b28b33;
+   text-decoration: underline;
 }
 /* 유틸리티 영역 */
 .utility{
     position: absolute;
     right: 40px ;
-    bottom:  55px;
+    bottom:  70px;
     margin: 15px;
 }
 .utility li, .utility a{
@@ -213,7 +221,7 @@ a:link{
 }
 .utility a::before{
     content: "|";
-    color: #b28b33;
+    color: #ffd700;
     margin-right: 10px;
 
 }
@@ -246,7 +254,7 @@ a:link{
     background-color: #fff;
     box-shadow: 0 -5px 8px rgba(0, 0, 0, 0.2) ;
     border-radius: 20px 20px 0 0;
-    color: #b28b33;
+    color: #ffbf00;
     text-decoration: underline;
 
 }
@@ -291,7 +299,7 @@ a:link{
     position: relative;
     background-image: linear-gradient(to right,#BFF304 0%, #0A8616 100%);
     overflow: hidden;
-    box-shadow:inset 0 4px 0 0 #b28b33;
+    box-shadow:inset 0 4px 0 0 #ffd700;
  }
 /* footer_top 영역 */
 .fTop{
@@ -321,7 +329,7 @@ a:link{
     position: absolute;
     right: 0;
 }
-.selectList select{
+.selectList select{ 
     height: 20px;
     margin-right: 10px;
     float: left;
@@ -346,7 +354,9 @@ a:link{
 address{
     font-style: normal
 }
-
+address > span{
+    margin-right: 15px;
+}
 
 
 

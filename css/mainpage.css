@@ -103,7 +103,7 @@
 .discount_benefits h2{
     font-family: "GothicA1Ex";
     font-size: 2em;
-    color: #b28b33;
+    color: #ffbf00;
 }
 .discount_benefits h3{
     color: #0F4E3F;
@@ -221,7 +221,7 @@
     margin: 10px;
     background: transparent;
     border: 3px double #b28b33;
-    color: #2B272B;
+    color: #111;
     cursor: pointer;
 
     
@@ -299,7 +299,7 @@
 }
 .fun .fun_contentArea .contents h3{
     padding: 10px 10px;
-    color: #2B272B;
+    color: #111;
     
 }
 
@@ -350,7 +350,7 @@
     box-sizing: border-box;
     padding: 55px 42px 55px 42px;
     background: url(../images/information_bg.jpg) no-repeat center;
-    margin: 150px 0;
+    margin: 118px 0;
     cursor: url(../images/fairystick.png), auto;
     
     
@@ -360,11 +360,11 @@
     font-family: "GothicA1Ex";
     font-size: 3.2em;
     padding: 30px 42px;
-    color: #03384B;
+    color: #154c60;
     text-align: center;
 
 }
-.information h1:hover{
+.information:hover h1{
     background: url(../images/glitterbg.jfif);
     -webkit-background-clip: text;
     color: transparent;
@@ -393,6 +393,10 @@
 .information .anno li{
     line-height: 2;
 }
+.information .anno li a{
+    display: block;
+}
+
 .information .runtime{
     box-sizing: border-box;
     background-color: #0F4E3F;
@@ -443,24 +447,12 @@
     width: 100vw;
     height: 550px;
     margin-left: calc(-50vw + 50%);
-    background-image: linear-gradient(to right,
-                                    #99E3D3 0%, #D2EEB5 20%,#EAF2A9 50%,
-                                    #91e96e 100%);
-    background-size: 400% 400%;
-    animation: backgroundChange 10s ease infinite;
-   
-   
-   
-    
+    background-image:url(../images/smart_bg.jpg)
 }
-@keyframes backgroundChange { 
-    0%{background-position:0% 0%}
-    50%{background-position:100% 0%}
-    100%{background-position:0% 0%}
-}
+
 .smartService_content{
     position: relative;
-    width: 1040px;
+    width: 1020px;
     height: 405px;
     margin: 0 auto;
     padding: 50px 0;
@@ -473,7 +465,7 @@
     top: 100px;
     left: 45px;
     height: 2px;
-    background-color: #574a2c;
+    background-color: #0F4E3F;
     
 }
 
@@ -484,7 +476,7 @@
     font-family: "GothicA1B";
     font-size: 1.7em;
     line-height: 1.8;
-    color: #574a2c;
+    color: #0F4E3F;
     
 
 }
@@ -513,14 +505,14 @@
     height: 60px;
 }
 .smartService .service_content_txt td:hover{
-    outline: 5px double #b28b33;
+    outline: 5px double #FEBF10;
     outline-offset: -5px;
     border-radius: 40px;
     background-color: rgba(255, 255, 255, 0.4);
 }
 
 .smartService .service_content_txt a {
-   color: #3f3929;
+   color: #0F4E3F;
 }
 
 /* 반응형 */

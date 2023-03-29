@@ -5,8 +5,8 @@ $(window).scroll( function(){
         let bottom_of_element = $(this).offset().top + $(this).outerHeight();
         let bottom_of_window = $(window).scrollTop() + $(window).height();
         
-        if( bottom_of_window > bottom_of_element ){
-            $(this).animate({opacity : 1 },500);
+        if( bottom_of_window > bottom_of_element-500 ){
+            $(this).animate({opacity : 1 },600);
         }
     }); 
     

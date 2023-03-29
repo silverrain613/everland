@@ -7,26 +7,33 @@
     <title>에버랜드</title>
     <script src="https://kit.fontawesome.com/54880b83c5.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.4.min.js"></script>
+    <link rel="shortcut icon" href="images/smalllogo.png" />
+
 </head>
 <body>
     <!-- [s]Header 영역 -->
     <div id="header">
         <!--[s] 로고 영역 -->
-        <div class="logo" style=" cursor: pointer;" onclick="location.href='mainpage.html';">
+        <div class="logo" style=" cursor: pointer;" onclick="location.href='index.html';" title="메인페이지로 이동">
         </div>
         <!--[e] 로고 영역 -->
         <!--[s] 유틸리티영역 -->
         <ul class="utility">
-            <li><a href="https://www.everland.com/mobile/member/login.el?r=https://www.everland.com/web/everland/main.html">로그인</a></li>
-            <li><a href="/join.html">회원가입</a></li>
-            <li><a href="https://www.everland.com/web/everland/customercenter/faq/faq.html">손님상담센터</a></li>
-            <li><a href="https://www.everland.com/web/everland/recruitment/cast/recruitment/news/recruitment_guide01.html">채용문의</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="join.html">회원가입</a></li>
+            <li><a href="#">손님상담센터</a></li>
+            <li><a href="#">채용문의</a></li>
         </ul>
         <!--[e] 유틸리티 영역 -->
     </div>
     <!-- [e]Header 영역 -->
     <!-- [s]main_content 영역 -->
     <div id="main_content">
+        <!--[s] 메인이미지 영역-->
+        <section class="imgArea">
+            
+        </section>
+        <!--[e] 메인이미지 영역-->
         <!--[s] 회원가입 영역-->
         <section class="joinArea">
             <div class="joinMember">
@@ -40,7 +47,7 @@
                         </div>
                         <div class="joinMember_form_item">
                             <div class="sideFunction">
-                                <button type="button" class="button checkID" onclick="checkID()">
+                                <button type="button" class="button checkID" >
                                     <span>중복체크</span>
                                 </button>
                             </div>
@@ -92,11 +99,7 @@
             </div>
         </section>
         <!--[e] 회원가입 영역-->
-        <!--[s] 메인이미지 영역-->
-        <section class="imgArea">
-            
-        </section>
-        <!--[e] 메인이미지 영역-->
+        
     </div>
     <!-- [e]main_content 영역 -->
     <script src="js/join.js"></script>
