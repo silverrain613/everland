@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everland-mobile</title>
+    <STYLE>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #fff;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav{
+            text-align: center;
+        }
+        nav a:link, a:visited{
+            color: #fff;
+        }
+        /* 선택시 actice */
+        nav a:active{
+            color: yellow;
+        }
+        h1{
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        h2{
+            text-align: center;
+            font-size: 1.3em;
+        }
+        p{
+            font-size: 1.3em;
+            line-height: 2.5;
+        }
+        li{
+            font-size: 1em;
+            line-height: 2;
+        }
+        #container{
+            width: 100%;
+        }
+        /* nav로 menu 밖에없음 */
+        header{
+            width: 100%;
+            height: 515px;
+            /* 핵심 이미지 */
+            background: url(images/mobile_bg.jpg) no-repeat center;
+            background-size: 100%;
+        }
+        nav{
+            height: 50px;
+            background:linear-gradient(to right,#BFF304 0%, #15581c 100%);
+        }
+        #main_nav{
+            list-style: none;
+            padding: 10px;
+        }
+        #main_nav li{
+            display: inline-block;
+            color: #fff;
+            font-size: 0.8em;
+            margin: 5px 15px;
+        }
+      
+        .photo{
+            width: 100%;
+            text-align: center;
+        }
+        
+        #information{
+            padding: 10px;
+            margin: 20px 0;
+            background-image: url(images/information_bg.jpg);
+            background-position-y: 60%;
+        }
+        #information .content{
+            margin: 20px;
+            padding: 10px;
+            background-color: rgba(100, 152, 130, 0.5);
+            color: white;
+            text-align: center;
+        }
+        #information h1{
+            color: #fff;
+            
+        }
+        #information .runtime_caution{
+            font-size: 1em;
+            text-align: left;
+        }
+        #benefit{
+            margin: 40px 0;
+        }
+        #benefit .benefit_img{
+            display: inline-block;
+            width: 49%;
+            height: 50%;
+            margin: 10px 0;
+        }
+       
+        #benefit .benefit_img p{
+            font-size: 0.9em;
+        }
+      
+        footer{
+            background: linear-gradient(to right,#BFF304 0%, #15581c 100%);
+        }
+        footer p{
+            line-height: 1.5;
+            text-align: center;
+            color: #fff;
+        }
+    </STYLE>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul id="main_nav">
+                    <!-- 내 홈페이지에 맞는 메뉴 세개로 추려서 바꾸기 (id도)  -->
+                    <li><a href="#information">이용정보</a></li>
+                    <li><a href="#fun">즐길거리</a></li>
+                    <li><a href="#benefit">혜택</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 메뉴의 첫번째 아이디랑 동일하게 주기 -->
+        <section id="information">
+            <div class="page_title">
+                <h1>이용정보</h1>
+            </div>
+            <div class="content">
+                <h2>운영시간</h2>
+                <p class>일~ 목 : 10:00~ 19:00</p>
+                <p class>금, &nbsp;토 &nbsp;: 10:00~ 20:00</p>
+                <p class="runtime_caution">* 현장 상황에 따라 에버랜드 운영 및 공연 
+                    일정이 예고 없이 변경될 수 있습니다.</p> 
+            </div>
+        </section>
+        <section id="fun">
+            <div class="page_title">
+                <h1>즐길거리</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="images/attFun1.jpg" alt="">
+                    <img src="images/resFun1.jpg" alt="">
+                    <img src="images/zooFun1.jpg" alt="">
+                    <img src="images/enterFun1.jpg" alt="">
+                </div>
+                
+            </div>
+        </section>
+        <section id="benefit">
+            <div class="page_title">
+                <h1>에버랜드를 편리하게이용</h1>
+                <h2>스마트 서비스 사용해보기</h2>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <div class="benefit_img">
+                        <img src="images/smart1.png" alt="스마트서비스1">
+                        <p>스마트 줄서기</p>
+                    </div>
+                    <div class="benefit_img">
+                        <img src="images/smart2.jpg" alt="스마트서비스2">
+                        <p>모바일 오더</p>
+                    </div>
+                    <div class="benefit_img">
+                        <img src="images/smart3.jpg" alt="스마트서비스3">
+                        <p>모바일 기프트카드</p>
+                    </div>
+                    <div class="benefit_img">
+                        <img src="images/smart4.jpg" alt="스마트서비스4">
+                        <p>유모차, 웨건 예약</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <footer>
+            <p>WELCOME EVERLAND! <br> 환상의 나라로 놀러오세요 </p>
+        </footer>
+    </div>
+</body>
+</html>

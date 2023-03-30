@@ -43,30 +43,23 @@
                     <div class="joinMember_formGroup">
                         <div class="joinMember_form_item">
                             <div class="label">성명</div>
-                            <input type="text" id="name" name="name" placeholder="이름을 입력해주세요">
+                            <input type="text" id="name" required name="name" placeholder="이름을 입력해주세요">
                         </div>
                         <div class="joinMember_form_item">
                             <div class="sideFunction">
-                                <button type="button" class="button checkID" >
+                                <button type="button" class="button checkID"  >
                                     <span>중복체크</span>
                                 </button>
                             </div>
                             <div class="label">아이디</div>
-                            <input type="text" id="id" name="id" required placeholder="아이디로 사용하실 이메일을 입력해주세요" autocomplete="off">
-                            <div class="validateMessage idValidateMessage " style="display: none;">
-                                <span class="error">올바른 이메일 형식을 입력해주세요.</span>
-                            </div>
+                            <input type="text" id="id" name="id" required placeholder="아이디로 사용하실 이메일을 입력해주세요" autocomplete="off" >
+                            
                         </div>
                         <div class="joinMember_form_item">
                             
                             <div class="label">비밀번호</div>
                             <input type="password" id="password" name="password" required  placeholder="비밀번호를 입력해주세요">
-                            <div class="validateMessage pwdValidateMessage" style="display: none;">
-                                <span class="error">
-                                    비밀번호는 영문, 숫자 8~13자리 또는 <br>
-                                    영문, 숫자, 특수문자를 혼합한 10~13자리만 가능합니다.
-                                </span>
-                            </div>
+                            
                         </div>
                         <div class="joinMember_form_item">
                             <div class="label">연락처</div>
@@ -80,6 +73,8 @@
                                 </label>
                             </div>
                             <div class="label exceptGrid">추가이메일(선택)</div>
+                            <div class="validateMessage emailValidateMessage" style="display: none;">
+                            </div>
                             <input type="text" id="email" name="email"  placeholder="소식을 받아보실 이메일 주소를 입력해주세요">
                         </div>
                         <div class="joinMember_form_item">
