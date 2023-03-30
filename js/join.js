@@ -42,21 +42,45 @@ let area16 = ["서귀포시","제주시","남제주군","북제주군"];
   
    
   
-   // 시/도 선택시 구/군 설정
+// 시/도 선택시 구/군 설정
   
-   $("select[name^=cList]").change(function() {
-    let area = "area"+$("option",$(this)).index($("option:selected",$(this))); // 선택지역의 구군 Array
-    let $gugun = $(this).next(); // 선택영역 군구 객체
-    $("option",$gugun).remove(); // 구군 초기화
-  
-    if(area == "area0")
-     $gugun.append("<option value=''>구/군 선택</option>");
-    else {
-     $.each(eval(area), function() {
-      $gugun.append("<option value='"+this+"'>"+this+"</option>");
-     });
+$("select[name^=cList]").change(function() {
+let area = "area"+$("option",$(this)).index($("option:selected",$(this))); // 선택지역의 구군 Array
+let $gugun = $(this).next(); // 선택영역 군구 객체
+$("option",$gugun).remove(); // 구군 초기화
+
+if(area == "area0")
+    $gugun.append("<option value=''>구/군 선택</option>");
+else {
+    $.each(eval(area), function() {
+    $gugun.append("<option value='"+this+"'>"+this+"</option>");
+    });
+}
+});
+
+// 동일한 ID 선택
+
+$('#checkSameId').click(function(){
+    let id = $('#id').val();
+    let checked = $('.check').is(':checked');
+    if(checked){
+         $('#email').val(id);
     }
-   });
-  
-  
- 
+    if (id.length === 0) {
+        $("#checkSameId").attr("disabled",true); 
+         $('#email').val('아이디를 먼저 입력해주세요').css('color','red');
+    }
+});
+initialize( $('#email'));
+initialize('#id');
+
+function initialize(area){  
+        $(area).click(function () {
+        let id = $('#id').val();
+        if ( $('#email').val()=='아이디를 먼저 입력해주세요') {
+             $('#email').val('').css('color','#000')
+            $("#checkSameId").attr("disabled",false); 
+            $('#checkSameId').prop("checked", false);
+        }
+    });
+}
